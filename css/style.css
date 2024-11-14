@@ -1,0 +1,31 @@
+.icones img{
+    width: 1.3em;
+}
+
+.foto img{
+    width: 2em;
+}
+
+.login{
+    width: 50%;
+    margin: auto;
+
+}
+
+.quadro a img{
+    opacity: 0.5;
+    width: 50%;
+}
+
+.quadro a:hover img{
+    opacity: 1;
+}
+
+.quadro a{
+    text-decoration: none;
+    color: black;
+}
+
+.quadro a:hover{
+    color: darkred;
+}

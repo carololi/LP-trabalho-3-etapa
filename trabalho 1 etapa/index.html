@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Hotel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <div><img id="logo" src="img/hotel.png" alt=""></div>
+            <ul>
+                <li><button class="opcao">Sobre</button></li>
+                
+                <li><button class="opcao">Parceria</button></li>
+                
+                <li><button class="opcao">Viagens</button></li>
+                
+            </ul>
+        </nav>
+            <br>
+    </header>
+    
+
+    <main>
+
+        <section >
+            <img src="img/pexels-donaldtong94-189296.jpg" alt="" id="banner">
+        </section>
+    <div id="divcentro">
+        <section class="res">
+        
+            <form name="hotel">
+                <h1><output id="titulo">Faça a sua reserva</output></h1>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="nome" required>
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx" required>
+        
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="@nomedocliente.com" required>
+                <label for="data">Data</label>
+                <input type="date" name="data" id="data">
+                <p>
+                    <label for="reserva">Tipos de reserva</label>
+                    <select name="reserva" id="reserva">
+                        <option value="quarto s">Quarto Simples</option>
+                        <option value="quarto c">Quarto de Casal</option>
+                        <option value="suite">Suíte Master</option>
+                    </p>
+                    </p>
+                </select>
+                <label for="horario">Horário</label>
+                <input type="radio" name="hora" id="00h" value="00h-12h">
+                <label for="00h">00h-12h</label>
+                <input type="radio" name="hora" id="14h" value="14h-18h">
+                <label for="00h">16h-18h</label>
+                <input type="radio" name="hora" id="20h" value="20h-0h">
+                <label for="20h">21h-00h</label>
+                <br>
+                <label for="opcionais">Opcionais</label>
+                <input type="checkbox" name="cafe" id="cafe" onchange="calc(100,this.checked)"> Café da Manhã e da tarde
+                <input type="checkbox" name="almoco" id="almoco" onchange="calc(300,this.checked)"> Almoço e janta
+                <input type="checkbox" name="bebida" id="bebida" onchange="calc(250,this.checked)"> Bebidas
+        
+                <p id="saida">
+                    R$ <output id="total">0</output>
+                </p>
+                <button type="reset">Limpar</button>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+</main>
+
+
+    <footer>@021_OFCCAROL</footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

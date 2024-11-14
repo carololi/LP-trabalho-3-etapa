@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-inner{
+   width:800px ;
+   height:400px ;
+   margin: auto;
+   padding: 15px;
+   
+}
+
+.cards{
+    padding: 20px;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-bod{
+    width: 100px;
+    height: 100px;
+}
+
+.card-title{
+    padding: 10px;
+    justify-content: space-evenly;
+   
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;    
+}
+
+h1, h2{
+    font-family: "Poppins", sans-serif;
+    color: var(--c1);
+}
+
+#logo{
+    width:75px;
+    height:40px;
+    margin-right: auto;
+}
